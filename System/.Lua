@@ -9,7 +9,7 @@ OrionLib:MakeNotification({
 	Time = 5
 })
 
-_G.Key = "V4"
+_G.Key = "Dev_V4.a91mxo02kx92mxbb03"
 _G.KeyInput = "string"
 
 function Destroy()
@@ -24,7 +24,7 @@ end
 function CorrectKeyNotification()
   OrionLib:MakeNotification({
 	Name = "Correct Key!",
-	Content = "I Thought You Couldnt Find My Key!",
+	Content = "Thanks For Supporting me",
 	Image = "rbxassetid://10470552407",
 	Time = 5
 })
@@ -33,7 +33,7 @@ end
 function InCorrectKeyNotification()
   OrionLib:MakeNotification({
 	Name = "Incorrect Key!",
-	Content = "Please Find My Key",
+	Content = "Please Go To The Link",
 	Image = "rbxassetid://10470552407",
 	Time = 5
 })
@@ -46,7 +46,7 @@ local Tab = Window:MakeTab({
 })
 
 Tab:AddTextbox({
-	Name = "Enter The Key Here!",
+	Name = "Enter The Key Here",
 	Default = "",
 	TextDisappear = true,
 	Callback = function(Value)
