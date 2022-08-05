@@ -46,7 +46,7 @@ local Tab = Window:MakeTab({
 })
 
 Tab:AddTextbox({
-	Name = "Enter Key Here!",
+	Name = "Enter The Key Here!",
 	Default = "",
 	TextDisappear = true,
 	Callback = function(Value)
@@ -55,7 +55,7 @@ Tab:AddTextbox({
 })
 
 Tab:AddButton({
-	Name = "Verify Key!",
+	Name = "Verify Key",
 	Callback = function()
 	if _G.KeyInput == _G.Key then
 	Dev_V4()
@@ -63,6 +63,14 @@ Tab:AddButton({
    else
 	InCorrectKeyNotification()
 	end
+end
+})
+
+Tab:AddButton({
+	Name = "Get Key!",
+	Callback = function()
+	game.StarterGui:SetCore("SendNotification", {Title = "Link Copied", Text = "Paste This In Your Browser!", Icon = "rbxassetid://10470552407", Duration = 5})
+	setclipboard("https://link-hub.net/479446/key-for-dev-v41")
 end
 })
 
