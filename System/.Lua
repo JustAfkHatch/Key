@@ -67,13 +67,6 @@ end
 })
 
 Tab:AddButton({
-	Name = "Key",
-	Callback = function()
-      setclipboard("V4")
-  	end    
-})
-
-Tab:AddButton({
 	Name = "Destroy Gui",
 	Callback = function()
       Destroy()
