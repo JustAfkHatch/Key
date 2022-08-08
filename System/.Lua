@@ -33,7 +33,7 @@ end
 function InCorrectKeyNotification()
   OrionLib:MakeNotification({
 	Name = "Incorrect Key!",
-	Content = "Please Go To The Link",
+	Content = "Please Get The Key",
 	Image = "rbxassetid://10470552407",
 	Time = 5
 })
