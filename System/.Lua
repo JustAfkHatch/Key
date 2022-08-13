@@ -1,6 +1,6 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Player = game.Players.LocalPlayer
-local Window = OrionLib:MakeWindow({Name = "Key System", HidePremium = true, SaveConfig = true, IntroEnabled = false})
+local Window = OrionLib:MakeWindow({Name = "Darkware -- Key System", HidePremium = true, SaveConfig = true, IntroEnabled = false})
 
 OrionLib:MakeNotification({
 	Name = "Logged In!",
@@ -9,7 +9,7 @@ OrionLib:MakeNotification({
 	Time = 5
 })
 
-_G.Key = "Dev_V4.a91mxo02kx92mxbb03"
+_G.Key = "Dev_V5.34kco3vmeo10cm3"
 _G.KeyInput = "string"
 
 function Destroy()
@@ -18,14 +18,14 @@ end
 
 function Dev_V4()
 Destroy()
-loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\74\117\115\116\65\102\107\72\97\116\99\104\47\68\101\118\45\86\52\47\109\97\105\110\47\82\101\108\101\97\115\101\100\47\46\76\117\97\34\44\116\114\117\101\41\41\40\41\10")()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/JustAfkHatch/Dev-V5-Normal-Version/main/.Lua",true))()
 end
 
 function CorrectKeyNotification()
   OrionLib:MakeNotification({
 	Name = "Correct Key!",
-	Content = "Thanks For Supporting me",
-	Image = "rbxassetid://10470552407",
+	Content = "Great Job!",
+	Image = "rbxassetid://10574779294",
 	Time = 5
 })
 end
@@ -34,14 +34,14 @@ function InCorrectKeyNotification()
   OrionLib:MakeNotification({
 	Name = "Incorrect Key!",
 	Content = "Please Get The Key",
-	Image = "rbxassetid://10470552407",
+	Image = "rbxassetid://10574782110",
 	Time = 5
 })
 end
 
 local Tab = Window:MakeTab({
 	Name = "Key System",
-	Icon = "rbxassetid://10470552407",
+	Icon = "rbxassetid://10560894045",
 	PremiumOnly = false
 })
 
