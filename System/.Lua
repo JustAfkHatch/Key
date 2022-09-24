@@ -77,7 +77,7 @@ Tab:AddButton({
     {OutlineColor = Color3.fromRGB(80, 80, 80),Time = 5, Type = "image"},
     {Image = "http://www.roblox.com/asset/?id=6023426923", ImageColor = Color3.fromRGB(255, 84, 84)}
     )
-	setclipboard("")
+	setclipboard("https://link-hub.net/479446/slime-tower-tycoon-gui")
 end
 })
 
