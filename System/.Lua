@@ -1,6 +1,6 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Player = game.Players.LocalPlayer
-local Window = OrionLib:MakeWindow({Name = "Darkware -- Key System", HidePremium = true, SaveConfig = true, IntroEnabled = false})
+local Window = OrionLib:MakeWindow({Name = "Vulture -- Key System", HidePremium = true, SaveConfig = true, IntroEnabled = false})
 
 OrionLib:MakeNotification({
 	Name = "Logged In!",
@@ -9,16 +9,16 @@ OrionLib:MakeNotification({
 	Time = 5
 })
 
-_G.Key = "Dev_V5.34kco3vmeo10cm3"
+_G.Key = "Vulture_Synapsexuserv3"
 _G.KeyInput = "string"
 
 function Destroy()
 game:GetService("CoreGui").Orion:Destroy()
 end
 
-function Dev_V4()
+function Vulture()
 Destroy()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/JustAfkHatch/Dev-V5-Normal-Version/main/.Lua",true))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/JustAfkHatch/slime-tower-tycoon/Roblox_Script/PRIVATE%20FEATURE"))()
 end
 
 function CorrectKeyNotification()
@@ -41,7 +41,7 @@ end
 
 local Tab = Window:MakeTab({
 	Name = "Key System",
-	Icon = "rbxassetid://10560894045",
+	Icon = "",
 	PremiumOnly = false
 })
 
@@ -58,7 +58,7 @@ Tab:AddButton({
 	Name = "Verify Key",
 	Callback = function()
 	if _G.KeyInput == _G.Key then
-	Dev_V4()
+	Vulture()
    	CorrectKeyNotification()
    else
 	InCorrectKeyNotification()
@@ -69,8 +69,15 @@ end
 Tab:AddButton({
 	Name = "Get Key!",
 	Callback = function()
-	game.StarterGui:SetCore("SendNotification", {Title = "Link Copied", Text = "Paste This In Your Browser!", Icon = "rbxassetid://10470552407", Duration = 5})
-	setclipboard("https://link-hub.net/479446/key-for-dev-v41")
+    local NotificationHolder = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Module.Lua"))()
+    local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Client.Lua"))()
+
+    Notification:Notify(
+    {Title = "Notification!", Description = "Link Copied,Please Ctrl V in your browser!"},
+    {OutlineColor = Color3.fromRGB(80, 80, 80),Time = 5, Type = "image"},
+    {Image = "http://www.roblox.com/asset/?id=6023426923", ImageColor = Color3.fromRGB(255, 84, 84)}
+    )
+	setclipboard("")
 end
 })
 
